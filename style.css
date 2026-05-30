@@ -1122,3 +1122,37 @@ nav a:hover {
   opacity: 1;
   transform: translateY(0);
 }
+
+.sparkle{
+
+  position:absolute;
+
+  width:8px;
+  height:8px;
+
+  background:white;
+
+  border-radius:50%;
+
+  pointer-events:none;
+
+  box-shadow:
+  0 0 10px #8bb5ee,
+  0 0 20px #8bb5ee;
+
+  animation:sparkleFade 1s forwards;
+}
+
+@keyframes sparkleFade{
+
+  from{
+    opacity:1;
+    transform:scale(1);
+  }
+
+  to{
+    opacity:0;
+    transform:translateY(-20px) scale(0);
+  }
+
+}
